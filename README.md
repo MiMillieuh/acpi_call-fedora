@@ -27,7 +27,7 @@ if you want to self-host it you can download acpi_call-modification-self-hosted.
 
 `wget https://github.com/MiMillieuh/Ublue-MiMiOS/raw/live/modules/acpi_call.ko`
 
-**acpi_call module isn't loaded after install :**
+## acpi_call module isn't loaded after install :
 
 Edit this file : `/etc/modules-load.d/acpi_call.conf` and add `acpi_call` to it.
 
