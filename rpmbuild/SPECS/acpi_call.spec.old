@@ -1,0 +1,39 @@
+Name:       akmod-acpi_call
+Version:    1.2.2
+Release:    1%{?dist}
+Summary:    A tool for calling ACPI methods
+
+License:    GPLv2+
+URL:        https://github.com/mkottman/acpi_call
+Source0:    akmod-acpi_call-1.2.2.tar.xz
+
+BuildRequires: kernel-devel
+BuildRequires: gcc
+
+%description
+ACPI Call is a utility for invoking ACPI methods from user space. This can be useful for debugging ACPI issues or for changing hardware settings that are otherwise not exposed in the BIOS or by the kernel.
+
+%prep
+%setup -q -n %{name}-%{version}
+
+%build
+make %{?_smp_mflags}
+
+%install
+make install DESTDIR=%{buildroot}
+
+%post
+/sbin/depmod -a %{KMODDIR}
+
+%postun
+/sbin/depmod -a %{KMODDIR}
+
+%files
+%defattr(-,root,root)
+%doc README.md
+%{_bindir}/acpi_call
+%{KMODDIR}/%{version}/
+
+%changelog
+* Mon Aug 21 2023 MiMillie mimillie290@gmail.com> - 1.1.0-1
+- Initial RPM release for fedora akmod
