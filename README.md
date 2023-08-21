@@ -17,11 +17,11 @@ modprobe it if not loaded :
 
 if you want to install it to your custom UblueOS you can do it in two ways : 
 
-**Hosted :**
+**Hosted (simplest way) :**
 
 if you want to use this repo as host you can download acpi_call-modification-hosted.zip in [release](https://github.com/MiMillieuh/acpi_call-fedora/releases/) extract it and add it directly to your UblueOS repo
 
-**Self-Hosted :**
+**Self-Hosted (still simple but harder than hosted) :**
 
 if you want to self-host it you can download acpi_call-modification-self-hosted.zip in [release](https://github.com/MiMillieuh/acpi_call-fedora/releases/) extract it and modify in `scripts/post/acpi_call-module.sh` at the wget line the url with your repo and username. it should look like this : 
 
