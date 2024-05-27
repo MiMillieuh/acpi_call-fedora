@@ -13,7 +13,7 @@ modprobe it if not loaded :
 
 `sudo modprobe acpi_call`
 
-### UblueOS : 
+### BlueBuild (UblueOS) : 
 
 Download the ublue-acpi_call.sh from [release](https://github.com/MiMillieuh/acpi_call-fedora/releases/) and put it in your script and post folder.
 
