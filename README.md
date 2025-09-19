@@ -3,6 +3,9 @@ The glorious acpi_call Kernel module for FEDORA !!!!!!!
 
 Compiled with https://github.com/nix-community/acpi_call
 
+## This repo is achived, Don't use this modul on recent OSes as it will causes large issues to your system.
+see : https://github.com/MiMillieuh/acpi_call-fedora/issues/4#
+
 ## Install : 
 
 Download the rpm from here : [release](https://github.com/MiMillieuh/acpi_call-fedora/releases/)
